@@ -6,6 +6,7 @@
 
 - link:
     # base16
+    ~/.config/base16-iterm2: base16-iterm2
     ~/.config/base16-shell: base16-shell
 
     # bash

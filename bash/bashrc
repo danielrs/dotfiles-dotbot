@@ -11,7 +11,7 @@ fi
 [[ $- != *i* ]] && return
 
 alias tput='/usr/bin/tput'
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto' # color options doesn't seem to work on OS X
 alias grep='grep --color=auto'
 
 # Colorize prompt
