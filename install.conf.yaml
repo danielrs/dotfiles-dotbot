@@ -1,0 +1,39 @@
+- defaults:
+    link:
+        create: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    # base16
+    ~/.config/base16-shell: base16-shell
+
+    # bash
+    ~/.bash_aliases: bash/bash_aliases
+    ~/.bash_logout: bash/bash_logout
+    ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
+    ~/.profile: bash/profile
+
+    # cvim
+    ~/.cvimrc: cvim/cvimrc
+
+    # git
+    ~/.gitconfig: git/gitconfig
+
+    # nvim and vim
+    ~/.config/nvim/autoload: nvim/autoload
+    ~/.config/nvim/syntax: nvim/syntax
+    ~/.config/nvim/init.vim: nvim/init.vim
+
+    ~/.vim/autoload: nvim/autoload
+    ~/.vim/syntax: nvim/syntax
+    ~/.vim/vimrc: nvim/init.vim
+
+    # ssh
+    ~/.ssh/config: ssh/config
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+    - [cd nvim; ./update-plug.sh, Updating plug.vim]
