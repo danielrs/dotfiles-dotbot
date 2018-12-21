@@ -21,10 +21,11 @@ RESET=$(tput sgr0)
 
 export PS1="\[$BLUE\][\[$RESET\]\[$GREEN\]\u\[$RESET\]\[$BLUE\]@\[$RESET\]\h \w\[$BLUE\]]\[$RESET\] \[$GREEN\]$\[$RESET\] "
 
+# Directory colors
 [ -e "/etc/DIR_COLORS" ] && DIR_COLORS="/etc/DIR_COLORS"
 [ -e "$HOME/.dircolors" ] && DIR_COLORS="$HOME/.dircolors"
 [ -e "$DIR_COLORS" ] || DIR_COLORS=""
-eval "`dircolors -b $DIR_COLORS`"
+[ -x "$(command -v dircolors)" ] && eval "`dircolors -b $DIR_COLORS`"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

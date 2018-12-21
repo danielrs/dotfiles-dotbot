@@ -1,6 +1,7 @@
 [homebrew]: https://brew.sh/
 [amethyst]: https://github.com/ianyh/Amethyst
 [chunkwm]: https://github.com/koekeishiya/chunkwm
+[iterm-meta]: https://stackoverflow.com/questions/196357/making-iterm-to-translate-meta-key-in-the-same-way-as-in-other-oses
 
 ## dotfiles-osx
 
@@ -35,6 +36,7 @@ After homebrew, install the following base apps:
 
 ```
 brew install neovim
+brew install the_silver_searcher
 brew install python
 brew cask install amethust
 brew cask install google-chrome
@@ -78,3 +80,6 @@ base16_[THEME NAME]
 
 Second, install the theme file by importing the appropiate theme file
 in `~/.config/base16-iterm2` from iterm color presets preferences.
+
+Third, enable the meta key as [explained here][iterm-meta]; that way `alt` bindings in vim works
+as expected.
