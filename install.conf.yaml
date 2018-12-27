@@ -5,7 +5,11 @@
 - clean: ['~', '~/.config']
 
 - link:
+    # alacritty
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
+
     # base16
+    ~/.config/base16-alacritty: base16-alacritty
     ~/.config/base16-iterm2: base16-iterm2
     ~/.config/base16-shell: base16-shell
 
