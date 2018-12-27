@@ -174,7 +174,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+background_opacity: 0.95
 
 # Mouse bindings
 #
@@ -439,6 +439,8 @@ key_bindings:
   - { key: F11,      mods: Command, chars: "\x1b[23;3~"                  }
   - { key: F12,      mods: Command, chars: "\x1b[24;3~"                  }
   - { key: NumpadEnter,             chars: "\n"                          }
+  # see: https://github.com/jwilm/alacritty/issues/607
+  - { key: N,        mods: Command, command: { program: "open", args: ["-nb", "io.alacritty"] } }
 
 
 # Colors (Tomorrow Night from base16)
