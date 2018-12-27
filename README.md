@@ -38,11 +38,16 @@ After homebrew, install the following base apps:
 brew install neovim
 brew install the_silver_searcher
 brew install python
-brew cask install amethust
+brew cask install iterm2
+brew cask install amethyst
 brew cask install google-chrome
 ```
 
-#### 3. Amethyst
+#### 3. Neovim
+
+In order for the `deoplete` plugin to work, make sure to install the `neovim` python package using `pip`.
+
+#### 4. Amethyst
 
 [Amethyst][amethyst] is one of the best Tiling Window Managers for OS X (along with [chunkwm][chunkwm]).
 However, the keyboard shorcuts require some work before they resemble something similar to the ones that
@@ -58,7 +63,7 @@ I like.
 - `Throw focused window to space left`: `Control + Option + Shift + [`
 - `Throw focused window to space right`: `Control + Option + Shift + ]`
 
-#### 4. SSH Files
+#### 5. SSH Files
 
 Add your SSH files to your `~/.ssh` folder:
 
@@ -70,7 +75,7 @@ chmod 400 id_rsa
 ssh-keygen -y -f id_rsa > id_rsa.pub
 ```
 
-#### 5. iTerm2 setup
+#### 6. iTerm2 setup
 
 First, enable the shell colors:
 
