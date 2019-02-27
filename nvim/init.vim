@@ -237,7 +237,7 @@ let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 
 "deoplete-jedi
-let g:deoplete#sources#jedi#extra_path = [getcwd()] "current dir venv
+let g:deoplete#sources#jedi#extra_path = [getcwd()] "add current dir to python path
 
 "deoplete.nvim
 let g:deoplete#enable_at_startup = 1
