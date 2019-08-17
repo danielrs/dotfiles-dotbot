@@ -7,3 +7,8 @@ Host bitbucket bitbucket.org
     HostName bitbucket.org
     IdentityFile ~/.ssh/saber_id_rsa
     User remoteusername
+
+Host gogs gogs.zerotier.cluster
+    Hostname gogs.zerotier.cluster
+    IdentityFile ~/.ssh/zerotier_id_rsa
+    User remoteusername
