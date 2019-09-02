@@ -12,3 +12,9 @@ Host gogs gogs.zerotier.cluster
     Hostname gogs.zerotier.cluster
     IdentityFile ~/.ssh/zerotier_id_rsa
     User remoteusername
+
+Host gitlab gitlab.zerotier.cluster
+    Hostname gitlab.zerotier.cluster
+    IdentityFile ~/.ssh/zerotier_id_rsa
+    User remoteusername
+
