@@ -1,11 +1,16 @@
-Host github github.com
+Host github0 github.com
     HostName github.com
     IdentityFile ~/.ssh/id_rsa
     User remoteusername
 
+Host github1 github.com
+    HostName github.com
+    IdentityFile ~/.ssh/alt_id_rsa
+    User remoteusername
+
 Host bitbucket bitbucket.org
     HostName bitbucket.org
-    IdentityFile ~/.ssh/saber_id_rsa
+    IdentityFile ~/.ssh/bitbucket_id_rsa
     User remoteusername
 
 Host gogs gogs.zerotier.cluster
