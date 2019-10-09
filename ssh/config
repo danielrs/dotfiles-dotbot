@@ -1,25 +1,25 @@
-Host github0 github.com
+Host github.com
     HostName github.com
     IdentityFile ~/.ssh/id_rsa
     User remoteusername
 
-Host github1 github.com
+Host github-alt.com
     HostName github.com
     IdentityFile ~/.ssh/alt_id_rsa
     User remoteusername
 
-Host bitbucket bitbucket.org
+Host bitbucket.org
     HostName bitbucket.org
     IdentityFile ~/.ssh/bitbucket_id_rsa
     User remoteusername
 
-Host gogs gogs.zerotier.cluster
-    Hostname gogs.zerotier.cluster
-    IdentityFile ~/.ssh/zerotier_id_rsa
+Host bitbucket-deepcast.org
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/deepcast_id_rsa
     User remoteusername
 
-Host gitlab gitlab.zerotier.cluster
-    Hostname gitlab.zerotier.cluster
+Host gogs.zerotier.cluster
+    Hostname gogs.zerotier.cluster
     IdentityFile ~/.ssh/zerotier_id_rsa
     User remoteusername
 
