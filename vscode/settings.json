@@ -1,0 +1,15 @@
+{
+    "telemetry.enableTelemetry": false,
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Solarized Light",
+    "go.formatTool": "goimports",
+
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+
+    "[yaml]": {
+        "editor.tabSize": 2
+    }
+}
+
