@@ -10,6 +10,7 @@
 
     "[yaml]": {
         "editor.tabSize": 2
-    }
+    },
+    "editor.fontFamily": "SourceCodePro-medium, Menlo, Monaco, 'Courier New', monospace"
 }
 

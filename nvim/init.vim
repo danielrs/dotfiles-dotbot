@@ -172,7 +172,8 @@ call plug#end()
 " ag.vim
 
 " base16-vim
-set background=dark
+set background=light
+" set background=dark
 set fillchars+=vert:│
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -190,9 +191,8 @@ autocmd FileType html,css,eelixir EmmetInstall
 " html5.vim
 
 " lightline.vim
-let g:lightline = {
-	\ 'colorscheme': 'jellybeans',
-	\ }
+let g:lightline = { 'colorscheme': 'solarized' }
+" let g:lightline = { 'colorscheme': 'jellybeans' }
 set laststatus=2
 
 " nerdtree
