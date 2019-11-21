@@ -37,10 +37,10 @@ After homebrew, install the following base apps:
 ```
 brew install neovim
 brew install the_silver_searcher
-brew install python
+brew install tmux
 brew cask install iterm2
 brew cask install amethyst
-brew cask install google-chrome
+brew cask install firefox
 ```
 
 #### 3. Neovim
@@ -55,8 +55,8 @@ I like.
 
 **First**. Enable mission control and set the following keyboard shorcuts:
 
-- `Move to space left`: `Control + [`
-- `Move to space right`: `Control + ]`
+- `Move left a space`: `Control + [`
+- `Move right a space`: `Control + ]`
 
 **Second**. Similarly, configure Amethyst's keyboard shorcuts to reflect this change:
 
