@@ -18,7 +18,6 @@
     ~/.bash_logout: bash/bash_logout
     ~/.bash_profile: bash/bash_profile
     ~/.bashrc: bash/bashrc
-    ~/.profile: bash/profile
 
     # cvim
     ~/.cvimrc: cvim/cvimrc
@@ -35,6 +34,11 @@
     ~/.vim/syntax: nvim/syntax
     ~/.vim/vimrc: nvim/init.vim
 
+    # shell
+    ~/.aliases: shell/aliases
+    ~/.profile: shell/profile
+    ~/.shellrc: shell/shellrc
+
     # ssh
     ~/.ssh/config: ssh/config
 
@@ -43,6 +47,12 @@
 
     # vscode
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+
+    # zsh
+    ~/.zaliases: zsh/zaliases
+    ~/.zlogout: zsh/zlogout
+    ~/.zprofile: zsh/zprofile
+    ~/.zshrc: zsh/zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

@@ -2,35 +2,56 @@
 #
 # ~/.profile
 #
+# Shell profile that contains common configuration between different shells
+# (bash, zsh, fish, etc).
 
 # ----------------
 # Exports
 # ----------------
 
-export UID # some distros don't auto-export it. Needed for docker-compose
+# Current user id (sometimes it is not exported, and it is useful to have)
+export UID
+
+# Default terminal text-editor to use
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export CLICOLOR=1 # for OS X
-export ANDROID_HOME="$HOME/.android-sdk"
+
+# Go root and path
 export GOROOT="$HOME/.golang"
 export GOPATH="$HOME/Development/go"
+
+# Android home
+export ANDROID_HOME="$HOME/.android-sdk"
 
 # Java apps font redering and corrent behaviour in tiling wms.
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dsun.java2d.xrender=true -Dswing.aatext=true'
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+# Enables terminal colors in OS X
+export CLICOLOR=1
+
 # ----------------
 # PATH
 # ----------------
 
+# System local bin
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# User local bin
 PATH="$HOME/.local/bin:$PATH"
+
+# Rust
 PATH="$HOME/.cabal/bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
+
+# Go
 PATH="$GOROOT/bin:$PATH"
 PATH="$GOPATH/bin:$PATH"
+
+# Miniconda
 PATH="$HOME/.miniconda3/bin:$PATH"
+
 # if which ruby >/dev/null && which gem >/dev/null; then
 # 	PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # fi
@@ -39,16 +60,7 @@ PATH="$HOME/.miniconda3/bin:$PATH"
 export PATH
 
 # ----------------
-# DEV TOOLS
-# ----------------
-
-# sets up kubernetes completion
-if [ -x "$(command -v kubectl)" ]; then
-    source <(kubectl completion bash)
-fi
-
-# ----------------
-# MISC
+# Misc
 # ----------------
 
 # # Sets up DPI size for GTK apps.
@@ -61,3 +73,4 @@ export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_P
 
 #export SDKMAN_DIR="/home/danielrs/.sdkman"
 #[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && . "$SDKMAN_DIR/bin/sdkman-init.sh"
+

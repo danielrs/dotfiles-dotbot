@@ -3,6 +3,15 @@
 # ~/.bash_profile
 #
 
-[[ -f ~/.profile ]] && . ~/.profile
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.profile ]] && source ~/.profile
+[[ -f ~/.bashrc ]] && source ~/.bashrc
+
+# ----------------
+# COMPLETION
+# ----------------
+
+# Sets up Kubernetes completion
+if [ -x "$(command -v kubectl)" ]; then
+    source <(kubectl completion bash)
+fi
 

@@ -88,3 +88,12 @@ in `~/.config/base16-iterm2` from iterm color presets preferences.
 
 Third, enable the meta key as [explained here][iterm-meta]; that way `alt` bindings in vim works
 as expected.
+
+## References
+
+Check the following link for moving from `bash` to `zsh`:
+- https://scriptingosx.com/2019/06/moving-to-zsh/
+- https://unix.stackexchange.com/a/26059
+- https://superuser.com/questions/183870/difference-between-bashrc-and-bash-profile/183980#183980
+- https://superuser.com/a/187673
+
