@@ -22,6 +22,10 @@
     # cvim
     ~/.cvimrc: cvim/cvimrc
 
+    # fish
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/functions: fish/functions
+
     # git
     ~/.gitconfig: git/gitconfig
 

@@ -11,9 +11,7 @@ These are my **personal** dotfiles, they *may* or *may not* work for you. I'm us
 
 Configuration files and scripts, check each **dotfile** to see what's included.
 
-### After fresh install
-
-#### 0. dotfiles
+### 0. dotfiles
 
 Install the dotfiles themselves:
 
@@ -22,32 +20,39 @@ cd [DOTFILES FOLDER]
 ./install
 ```
 
-You should be be able to see able to see if anything went wrong.
+You should be able to see able to see if anything went wrong.
 
-
-#### 1. Homebrew
+### 1. Homebrew
 
 The most decent package manager for OS X (I miss you pacman). Follow the instructions
 [here][homebrew].
 
-#### 2. Apps
+### 2. Apps
 
-After homebrew, install the following base apps:
+Using homebrew, install the following base apps:
 
 ```
-brew install neovim
-brew install the_silver_searcher
-brew install tmux
-brew cask install iterm2
-brew cask install amethyst
-brew cask install firefox
+brew install \
+    bash \
+    fish \
+    neovim \
+    tmux \
+    the_silver_searcher
+
+brew cask install \
+    amethyst \
+    firefox \
+    iterm2 \
+    spotify \
+    visitual-studio-code \
+    vlc
 ```
 
-#### 3. Neovim
+#### Neovim
 
 In order for the `deoplete` plugin to work, make sure to install the `neovim` python package using `pip`.
 
-#### 4. Amethyst
+#### Amethyst
 
 [Amethyst][amethyst] is one of the best Tiling Window Managers for OS X (along with [chunkwm][chunkwm]).
 However, the keyboard shorcuts require some work before they resemble something similar to the ones that
@@ -63,7 +68,21 @@ I like.
 - `Throw focused window to space left`: `Control + Option + Shift + [`
 - `Throw focused window to space right`: `Control + Option + Shift + ]`
 
-#### 5. SSH Files
+#### iTerm2
+
+**First**, enable the shell colors:
+
+```
+base16_[THEME NAME]
+```
+
+**Second**, install the theme file by importing the appropiate theme file
+in `~/.config/base16-iterm2` from iterm color presets preferences.
+
+**Third**, enable the meta key as [explained here][iterm-meta]; that way `alt` bindings in vim works
+as expected.
+
+### 3. SSH Files
 
 Add your SSH files to your `~/.ssh` folder:
 
@@ -74,20 +93,6 @@ mv ~/Downloads/id_rsa ./id_rsa
 chmod 400 id_rsa
 ssh-keygen -y -f id_rsa > id_rsa.pub
 ```
-
-#### 6. iTerm2 setup
-
-First, enable the shell colors:
-
-```
-base16_[THEME NAME]
-```
-
-Second, install the theme file by importing the appropiate theme file
-in `~/.config/base16-iterm2` from iterm color presets preferences.
-
-Third, enable the meta key as [explained here][iterm-meta]; that way `alt` bindings in vim works
-as expected.
 
 ## References
 
