@@ -27,16 +27,17 @@ set -x CLICOLOR 1
 # PATH configuration
 # --------------------------------
 
-prepend_to_path "$HOME/.miniconda3/bin"
-prepend_to_path "$GOPATH/bin"
-prepend_to_path "$GOROOT/bin"
-prepend_to_path "$N_PREFIX/bin"
-prepend_to_path "$HOME/.cargo/bin"
-prepend_to_path "$HOME/.cabal/bin"
-prepend_to_path "$HOME/.local/bin"
-prepend_to_path "/usr/local/opt/python/libexec/bin"
-prepend_to_path "/usr/local/bin"
+# NOTE: we are using prepend (last added = first on list)
 prepend_to_path "/usr/local/sbin"
+prepend_to_path "/usr/local/bin"
+prepend_to_path "/usr/local/opt/python/libexec/bin"
+prepend_to_path "$HOME/.local/bin"
+prepend_to_path "$HOME/.cabal/bin"
+prepend_to_path "$HOME/.cargo/bin"
+prepend_to_path "$N_PREFIX/bin"
+prepend_to_path "$GOROOT/bin"
+prepend_to_path "$GOPATH/bin"
+prepend_to_path "$HOME/.miniconda3/bin"
 
 # --------------------------------
 # Other
