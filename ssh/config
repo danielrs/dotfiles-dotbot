@@ -3,11 +3,6 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
     User remoteusername
 
-Host github-alt.com
-    HostName github.com
-    IdentityFile ~/.ssh/alt_id_rsa
-    User remoteusername
-
 Host bitbucket.org
     HostName bitbucket.org
     IdentityFile ~/.ssh/bitbucket_id_rsa
@@ -18,8 +13,47 @@ Host bitbucket-deepcast.org
     IdentityFile ~/.ssh/deepcast_id_rsa
     User remoteusername
 
-Host gogs.zerotier.cluster
-    Hostname gogs.zerotier.cluster
-    IdentityFile ~/.ssh/zerotier_id_rsa
+# GitHub profiles
+
+Host github-0.com
+    HostName github.com
+    IdentityFile ~/.ssh/profile_0_id_rsa
+    User remoteusername
+
+Host github-1.com
+    HostName github.com
+    IdentityFile ~/.ssh/profile_1_id_rsa
+    User remoteusername
+
+Host github-2.com
+    HostName github.com
+    IdentityFile ~/.ssh/profile_2_id_rsa
+    User remoteusername
+
+Host github-3.com
+    HostName github.com
+    IdentityFile ~/.ssh/profile_3_id_rsa
+    User remoteusername
+
+# Bitbucket profiles
+
+Host bitbucket-0.org
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/profile_0_id_rsa
+    User remoteusername
+
+Host bitbucket-1.org
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/profile_1_id_rsa
+    User remoteusername
+
+Host bitbucket-2.org
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/profile_2_id_rsa
+    User remoteusername
+
+Host bitbucket-3.org
+    HostName bitbucket.org
+    IdentityFile ~/.ssh/profile_3_id_rsa
     User remoteusername
 
