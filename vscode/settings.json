@@ -1,8 +1,8 @@
 {
-    "telemetry.enableTelemetry": false,
+    "editor.fontFamily": "SourceCodePro-medium, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 14,
+    "telemetry.enableTelemetry": false,
     "workbench.colorTheme": "Solarized Light",
-    "go.formatTool": "goimports",
 
     "[javascript]": {
         "editor.tabSize": 2
@@ -11,6 +11,8 @@
     "[yaml]": {
         "editor.tabSize": 2
     },
-    "editor.fontFamily": "SourceCodePro-medium, Menlo, Monaco, 'Courier New', monospace"
-}
 
+    "go.formatTool": "goimports",
+    "go.goroot": "~/.golang",
+    "go.gopath": "~/Development/go"
+}
