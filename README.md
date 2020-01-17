@@ -94,6 +94,11 @@ chmod 400 id_rsa
 ssh-keygen -y -f id_rsa > id_rsa.pub
 ```
 
+### 4. Docker Desktop
+
+Check link regarding slow `docker-compose`:
+https://github.com/docker/compose/issues/7087#issuecomment-570757483
+
 ## References
 
 Check the following link for moving from `bash` to `zsh`:
