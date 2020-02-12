@@ -29,6 +29,9 @@
     # git
     ~/.gitconfig: git/gitconfig
 
+    # kitty
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
+
     # nvim and vim
     ~/.config/nvim/autoload: nvim/autoload
     ~/.config/nvim/syntax: nvim/syntax

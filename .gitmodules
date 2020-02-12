@@ -10,3 +10,6 @@
 [submodule "base16-alacritty"]
 	path = base16-alacritty
 	url = https://github.com/aaron-williamson/base16-alacritty
+[submodule "base16-kitty"]
+	path = base16-kitty
+	url = https://github.com/kdrag0n/base16-kitty
