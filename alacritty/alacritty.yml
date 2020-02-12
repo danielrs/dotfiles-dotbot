@@ -40,10 +40,6 @@ font:
     family: Source Code Pro
     style: Italic
 
-  italic:
-    family: Source Code Pro
-    style: Semibold Italic
-
 # Background opacity
 # ----------------
 
