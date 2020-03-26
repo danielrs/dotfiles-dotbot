@@ -8,6 +8,10 @@
         "editor.tabSize": 2
     },
 
+    "[nim]": {
+        "editor.tabSize": 2
+    },
+
     "[yaml]": {
         "editor.tabSize": 2
     },
