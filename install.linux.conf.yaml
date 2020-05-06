@@ -53,7 +53,7 @@
     ~/.tmux.conf: tmux/tmux.conf
 
     # vscode
-    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+    ~/.config/Code/User/settings.json: vscode/settings.linux.json
 
     # zsh
     ~/.zaliases: zsh/zaliases

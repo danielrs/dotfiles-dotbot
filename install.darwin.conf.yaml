@@ -1,0 +1,67 @@
+- defaults:
+    link:
+        create: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    # alacritty
+    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml
+
+    # base16
+    ~/.config/base16-alacritty: base16-alacritty
+    ~/.config/base16-iterm2: base16-iterm2
+    ~/.config/base16-shell: base16-shell
+
+    # bash
+    ~/.bash_aliases: bash/bash_aliases
+    ~/.bash_logout: bash/bash_logout
+    ~/.bash_profile: bash/bash_profile
+    ~/.bashrc: bash/bashrc
+
+    # cvim
+    ~/.cvimrc: cvim/cvimrc
+
+    # fish
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/functions: fish/functions
+
+    # git
+    ~/.gitconfig: git/gitconfig
+
+    # kitty
+    ~/.config/kitty/kitty.conf: kitty/kitty.conf
+
+    # nvim and vim
+    ~/.config/nvim/autoload: nvim/autoload
+    ~/.config/nvim/syntax: nvim/syntax
+    ~/.config/nvim/init.vim: nvim/init.vim
+
+    ~/.vim/autoload: nvim/autoload
+    ~/.vim/syntax: nvim/syntax
+    ~/.vim/vimrc: nvim/init.vim
+
+    # shell
+    ~/.aliases: shell/aliases
+    ~/.profile: shell/profile
+    ~/.shellrc: shell/shellrc
+
+    # ssh
+    ~/.ssh/config: ssh/config
+
+    # tmux
+    ~/.tmux.conf: tmux/tmux.conf
+
+    # vscode
+    ~/Library/Application Support/Code/User/settings.json: vscode/settings.darwin.json
+
+    # zsh
+    ~/.zaliases: zsh/zaliases
+    ~/.zlogout: zsh/zlogout
+    ~/.zprofile: zsh/zprofile
+    ~/.zshrc: zsh/zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+    - [cd nvim; ./update-plug.sh, Updating plug.vim]
