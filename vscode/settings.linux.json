@@ -4,7 +4,6 @@
     "files.trimTrailingWhitespace": true,
     "telemetry.enableTelemetry": false,
     "window.zoomLevel": -0.5,
-    "workbench.colorTheme": "Solarized Light",
 
     "[javascript]": {
         "editor.tabSize": 2
