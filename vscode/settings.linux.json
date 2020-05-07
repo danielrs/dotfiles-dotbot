@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "'Source Code Pro Medium', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Source Code Pro Medium', 'Droid Sans Mono', monospace",
     "editor.fontSize": 14,
     "files.trimTrailingWhitespace": true,
     "telemetry.enableTelemetry": false,
