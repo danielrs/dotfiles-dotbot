@@ -6,7 +6,7 @@ set -e
 if [ "$(uname -s)" == "Linux" ]; then
     echo "Using Linux configuration"
     CONFIG="install.linux.conf.yaml"
-elif [ "$(uname -S)" == "Darwin" ]; then
+elif [ "$(uname -s)" == "Darwin" ]; then
     echo "Using Darwin configuration"
     CONFIG="install.darwin.conf.yaml"
 else
