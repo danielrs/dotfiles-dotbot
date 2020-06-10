@@ -19,5 +19,6 @@
 
     "go.formatTool": "goimports",
     "go.goroot": "~/.golang",
-    "go.gopath": "~/Development/go"
+    "go.gopath": "~/Development/go",
+    "go.useLanguageServer": true
 }
