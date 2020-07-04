@@ -10,7 +10,11 @@
 
     # base16
     ~/.config/base16-alacritty: base16-alacritty
-    ~/.config/base16-iterm2: base16-iterm2
+
+    ~/.config/base16-iterm2:
+      path: base16-iterm2
+      if: &is-darwin "sh -c '[ `uname` = Darwin ]'"
+
     ~/.config/base16-shell: base16-shell
 
     # bash
@@ -54,15 +58,13 @@
 
     # vscode (Darwin)
     ~/Library/Application Support/Code/User/settings.json:
-      create: true
       path: vscode/settings.darwin.json
-      if: "sh -c '[ `uname` = Darwin ]'"
+      if: *is-darwin
 
     # vscode (Linux)
     ~/.config/Code/User/settings.json:
-      create: true
       path: vscode/settings.linux.json
-      if: "sh -c '[ `uname` = Linux ]'"
+      if: &is-linux "sh -c '[ `uname` = Linux ]'"
 
     # zsh
     ~/.zaliases: zsh/zaliases
@@ -71,6 +73,11 @@
     ~/.zshrc: zsh/zshrc
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Updating submodules]
 
     - [cd nvim; ./update-plug.sh, Updating plug.vim]
+
+    - [cd scripts; ./install-miniconda.sh, Installing Miniconda]
+
+    - [cd scripts; ./install-golang.sh, Installing Golang]
+
