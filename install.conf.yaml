@@ -83,3 +83,9 @@
 
     - [cd scripts; ./install-ansible.sh, Installing Ansible]
 
+    - command: cd scripts; ./install-homebrew.sh
+      description: Installing Homebrew
+      stdin: true
+      stdout: true
+      stderr: true
+

@@ -26,7 +26,7 @@ else
     exit 1
 fi
 
-# Download and install
+# Download and install silently
 
 echo "Downloading Miniconda 3 (latest)..."
 curl -fsSL "$MINICONDA_URL" -o "$INSTALLER"
