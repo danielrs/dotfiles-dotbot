@@ -55,6 +55,12 @@
     # vscode
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.darwin.json
 
+    # zsh
+    ~/.zaliases: zsh/zaliases
+    ~/.zlogout: zsh/zlogout
+    ~/.zprofile: zsh/zprofile
+    ~/.zshrc: zsh/zshrc
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
