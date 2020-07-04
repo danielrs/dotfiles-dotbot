@@ -2,18 +2,7 @@
 
 set -e
 
-# see: https://stackoverflow.com/questions/3466166/how-to-check-if-running-in-cygwin-mac-or-linux
-if [ "$(uname -s)" == "Linux" ]; then
-    echo "Using Linux configuration"
-    CONFIG="install.linux.conf.yaml"
-elif [ "$(uname -s)" == "Darwin" ]; then
-    echo "Using Darwin configuration"
-    CONFIG="install.darwin.conf.yaml"
-else
-    echo "System not recognized"
-    exit 1
-fi
-
+CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"

@@ -52,8 +52,17 @@
     # tmux
     ~/.tmux.conf: tmux/tmux.conf
 
-    # vscode
-    ~/.config/Code/User/settings.json: vscode/settings.linux.json
+    # vscode (Darwin)
+    ~/Library/Application Support/Code/User/settings.json:
+      create: true
+      path: vscode/settings.darwin.json
+      if: "sh -c '[ `uname` = Darwin ]'"
+
+    # vscode (Linux)
+    ~/.config/Code/User/settings.json:
+      create: true
+      path: vscode/settings.linux.json
+      if: "sh -c '[ `uname` = Linux ]'"
 
     # zsh
     ~/.zaliases: zsh/zaliases
