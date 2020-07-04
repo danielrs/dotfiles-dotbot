@@ -29,6 +29,14 @@ brew cask install \
     vlc
 ```
 
+#### Fish
+
+Configure `fish` as the new shell by adding `/usr/local/bin/fish` to `/etc/shells`. Then run:
+
+```
+chsh -s /usr/local/bin/fish
+```
+
 #### Neovim
 
 In order for the `deoplete` plugin to work, make sure to install the `neovim` python package using `pip`.
