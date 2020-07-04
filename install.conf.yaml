@@ -81,3 +81,5 @@
 
     - [cd scripts; ./install-golang.sh, Installing Golang]
 
+    - [cd scripts; ./install-ansible.sh, Installing Ansible]
+
