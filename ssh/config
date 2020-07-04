@@ -69,22 +69,22 @@ Host bitbucket-3.org
 
 # GitLab profiles
 
-Host gitlab.com
+Host gitlab-0.com
     HostName gitlab.com
     IdentityFile ~/.ssh/profile_0_id_rsa
     User remoteusername
 
-Host gitlab.com
+Host gitlab-1.com
     HostName gitlab.com
     IdentityFile ~/.ssh/profile_1_id_rsa
     User remoteusername
 
-Host gitlab.com
+Host gitlab-2.com
     HostName gitlab.com
     IdentityFile ~/.ssh/profile_2_id_rsa
     User remoteusername
 
-Host gitlab.com
+Host gitlab-3.com
     HostName gitlab.com
     IdentityFile ~/.ssh/profile_3_id_rsa
     User remoteusername
