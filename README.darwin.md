@@ -58,16 +58,16 @@ I like.
 
 ### iTerm2
 
-**First**, enable the shell colors:
+**First**. Enable the shell colors:
 
 ```
 base16_[THEME NAME]
 ```
 
-**Second**, install the theme file by importing the appropiate theme file
+**Second**. Install the theme file by importing the appropiate theme file
 in `~/.config/base16-iterm2` from iterm color presets preferences.
 
-**Third**, enable the meta key as [explained here][iterm-meta]; that way `alt` bindings in vim works
+**Third**. Enable the meta key as [explained here][iterm-meta]; that way `alt` bindings in vim works
 as expected.
 
 ### Docker Desktop
