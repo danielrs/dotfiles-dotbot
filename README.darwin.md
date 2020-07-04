@@ -25,7 +25,7 @@ brew cask install \
     firefox \
     iterm2 \
     spotify \
-    visitual-studio-code \
+    visual-studio-code \
     vlc
 ```
 
